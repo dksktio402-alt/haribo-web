@@ -85,12 +85,75 @@
   font-display: swap;
 }
 
+/* ---------- Real substitute fonts (added by request) ---------- */
+@font-face {
+  font-family: 'Pyeojin Gothic';
+  src: url('font/PyeojinGothic-Light.otf') format('opentype');
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pyeojin Gothic';
+  src: url('font/PyeojinGothic-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pyeojin Gothic';
+  src: url('font/PyeojinGothic-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pyeojin Gothic';
+  src: url('font/PyeojinGothic-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pyeojin Gothic';
+  src: url('font/PyeojinGothic-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'paybooc';
+  src: url('font/paybooc OTF Light.otf') format('opentype');
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'paybooc';
+  src: url('font/paybooc OTF Medium.otf') format('opentype');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'paybooc';
+  src: url('font/paybooc OTF Bold.otf') format('opentype');
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'paybooc';
+  src: url('font/paybooc OTF ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Suseong Dotum';
+  src: url('font/SuseongDotum.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
 /* ---------- Tokens ---------- */
 :root {
   --font-heading: 'KERIS KEDU OTF', 'Pretendard', sans-serif;
   --font-body: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Malgun Gothic', sans-serif;
-  --font-accent: 'JayeonSans', var(--font-body);
-  --font-number: 'Cafe24Ssurround', var(--font-body);
+  --font-accent: 'Pyeojin Gothic', var(--font-body);
+  --font-number: 'paybooc', var(--font-body);
+  --font-suseong: 'Suseong Dotum', var(--font-body);
   --font-year: 'Recipekorea', var(--font-body);
   --font-en: 'Inter', var(--font-body);
   --font-logo: 'Paperlogy', var(--font-body);
@@ -179,6 +242,13 @@ ul { list-style: none; margin: 0; padding: 0; }
   color: var(--black);
   padding: 10px 26px;
   font-size: 14px;
+}
+/* Spec: Starmix / Goldbären / Happy-Cola keep KERIS KEDU OTF "TASTE MORE";
+   Happy Grapes / Fruity Bussi / Worms Zourr use Suseong Dotum "taste more". */
+.btn-pill--suseong {
+  font-family: var(--font-suseong);
+  font-weight: 400;
+  font-size: 16px;
 }
 .btn-solid {
   background: var(--yellow);
