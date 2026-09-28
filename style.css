@@ -854,8 +854,8 @@ main .container { width: 90%; }
   margin-top: auto;
 }
 .event-card--compact .event-meta { margin-top: 10px; }   /* title -> meta is 30px on the short cards */
-.event-period { color: var(--red); font-weight: 600; font-size: clamp(16.5px, 1.199vw, 23.1px); letter-spacing: 0.03em; line-height: 0.95; }   /* Figma 21px, +10% */
-.event-link { font-weight: 600; font-size: clamp(16.5px, 1.144vw, 22px); letter-spacing: 0.03em; }                                        /* Figma 20px, +10% */
+.event-period { color: var(--red); font-weight: 600; font-size: clamp(18.15px, 1.319vw, 25.41px); letter-spacing: 0.03em; line-height: 0.95; }   /* Figma 21px, +10% */
+.event-link { font-weight: 600; font-size: clamp(18.15px, 1.319vw, 25.41px); letter-spacing: 0.03em; }                                        /* Figma 20px, +10% */
 
 /* ============ INSTAGRAM ============ */
 .instagram { padding: clamp(60px, 8vw, 120px) 0; text-align: center; }
