@@ -907,6 +907,9 @@ main .container { width: 90%; }
 }
 .footer-logo { height: clamp(56px, 5.16vw, 99px); width: auto; }
 .footer-cta { display: flex; gap: clamp(12px, 1.25vw, 24px); margin-bottom: clamp(20px, 1.6vw, 31px); }
+/* No hover effects anywhere in the footer (the shared .btn lift is switched off here) */
+.site-footer .btn { transition: none; }
+.site-footer .btn:hover { transform: none; }
 
 .footer-grid {
   display: grid;
