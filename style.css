@@ -649,42 +649,49 @@ ul { list-style: none; margin: 0; padding: 0; }
 .history-panel--red { background: var(--red-dark); display: flex; align-items: center; justify-content: center; }
 .history-panel--cream { background: var(--cream); display: flex; flex-direction: column; justify-content: center; gap: 22px; }
 
+.history-numerals {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 .history-year {
-  position: absolute;
   font-family: var(--font-year);
-  font-size: clamp(60px, 10vw, 150px);
+  font-size: clamp(80px, 13vw, 180px);
+  line-height: 1;
   color: var(--yellow);
   letter-spacing: 0.05em;
-  opacity: 0.9;
-  top: 8%;
 }
-.history-year { left: 6%; }
-.history-year--alt { left: auto; right: 6%; top: auto; bottom: 8%; }
 .history-bear {
   position: relative;
   z-index: 1;
   width: clamp(160px, 20vw, 260px);
+  margin-inline: clamp(-30px, -3vw, -10px);
   filter: drop-shadow(0 4px 4px rgba(0,0,0,0.3));
 }
 
 .history-badge {
   font-weight: 700;
-  font-size: 22px;
+  font-size: clamp(18px, 1.8vw, 30px);
   color: var(--gray-text);
 }
 .history-panel--cream h3 {
   font-weight: 500;
-  font-size: clamp(30px, 3.6vw, 48px);
+  font-size: clamp(30px, 4.5vw, 62px);
   line-height: 1.3;
   letter-spacing: -0.025em;
   color: var(--black);
 }
 .history-panel--cream p {
-  font-size: clamp(16px, 1.6vw, 20px);
+  font-size: clamp(16px, 1.8vw, 27px);
   line-height: 1.3;
   letter-spacing: -0.025em;
 }
-.history-panel--cream .btn { align-self: flex-start; }
+.history-panel--cream .btn {
+  align-self: flex-start;
+  padding: 18px 39px;
+  font-size: 22px;
+}
 
 /* ============ EVENTS ============ */
 .events { padding: clamp(60px, 8vw, 120px) 0; background: var(--white); }
