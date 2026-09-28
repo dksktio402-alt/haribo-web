@@ -824,21 +824,21 @@ main .container { width: 90%; }
   background: var(--white);
   color: var(--red);
   font-weight: 600;
-  font-size: clamp(16px, 1.04vw, 20px);
-  letter-spacing: 0.03em;          /* 0.6px @ 20px */
+  font-size: clamp(17.6px, 1.144vw, 22px);   /* Figma 20px, +10% */
+  letter-spacing: 0.03em;
   border-radius: 50px;
 }
 .event-badge--upcoming { color: var(--gray-text); }
 .event-body h3 {
   font-weight: 600;
-  font-size: clamp(22px, 1.82vw, 35px);
+  font-size: clamp(24.2px, 2.002vw, 38.5px);   /* Figma 35px, +10% */
   line-height: 1.2;
-  letter-spacing: 0.03em;          /* 1.05px @ 35px */
+  letter-spacing: 0.03em;
 }
 /* Figma: every title is exactly 2 lines (the <br> in the markup). Keep each line on one line
    so a wrap can't make one card taller than its neighbour. */
 @media (min-width: 1101px) { .event-body h3 { white-space: nowrap; } }
-.event-card--compact .event-body h3 { font-size: clamp(24px, 2.08vw, 40px); }   /* 1.2px @ 40px */
+.event-card--compact .event-body h3 { font-size: clamp(26.4px, 2.288vw, 44px); }   /* Figma 40px, +10% */
 .event-meta {
   display: flex;
   flex-wrap: wrap;
@@ -848,8 +848,8 @@ main .container { width: 90%; }
   margin-top: auto;
 }
 .event-card--compact .event-meta { margin-top: 10px; }   /* title -> meta is 30px on the short cards */
-.event-period { color: var(--red); font-weight: 600; font-size: clamp(15px, 1.09vw, 21px); letter-spacing: 0.03em; line-height: 20px; }
-.event-link { font-weight: 600; font-size: clamp(15px, 1.04vw, 20px); letter-spacing: 0.03em; }
+.event-period { color: var(--red); font-weight: 600; font-size: clamp(16.5px, 1.199vw, 23.1px); letter-spacing: 0.03em; line-height: 0.95; }   /* Figma 21px, +10% */
+.event-link { font-weight: 600; font-size: clamp(16.5px, 1.144vw, 22px); letter-spacing: 0.03em; }                                        /* Figma 20px, +10% */
 
 /* ============ INSTAGRAM ============ */
 .instagram { padding: clamp(60px, 8vw, 120px) 0; text-align: center; }
