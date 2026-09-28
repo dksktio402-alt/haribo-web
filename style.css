@@ -765,6 +765,12 @@ main .container { width: 90%; }
 /* Figma: title 5435, cards 5745 (116px gap), 283px to the next section */
 .events { padding: clamp(60px, 15.8vw, 303px) 0 clamp(60px, 8.5vw, 163px); background: var(--white); }
 .events .section-title { margin-bottom: clamp(40px, 6vw, 116px); }
+/* Card area runs nearly edge to edge: 90px side margins on screen at every width.
+   (<main> is zoom: 0.9, so 100px here renders as 90px.) Only width/padding change —
+   heights and type come from the content and stay as they were. */
+@media (min-width: 1101px) {
+  .events .container { width: 100%; max-width: none; padding-inline: 100px; }
+}
 
 /* One tall card + a stack of two short cards (861 x 315 in Figma), 30px column gap, 16px row gap.
    The row is as tall as the stack; the tall card stretches to match it, so its top edge lines up
