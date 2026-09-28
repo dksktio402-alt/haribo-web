@@ -722,7 +722,7 @@ main .container { width: 90%; }
   font-size: clamp(80px, 10.4vw, 200px);
   line-height: 1;
   color: var(--yellow);
-  letter-spacing: 0.05em;          /* 10px @ 200px */
+  letter-spacing: -0.05em;
 }
 .history-bear {
   position: relative;
