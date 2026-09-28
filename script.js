@@ -5,12 +5,13 @@
   var nextBtn = document.getElementById('flavorNext');
   if (!track || !prevBtn || !nextBtn) return;
 
+  // Distance between two neighbouring cards, measured in the track's own
+  // coordinate space (same units as scrollLeft). getBoundingClientRect() and
+  // getComputedStyle() disagree under CSS zoom, so don't mix them.
   function step() {
-    var card = track.querySelector('.flavor-card');
-    if (!card) return track.clientWidth;
-    var style = getComputedStyle(track);
-    var gap = parseFloat(style.columnGap || style.gap || '0') || 0;
-    return card.getBoundingClientRect().width + gap;
+    var cards = track.querySelectorAll('.flavor-card');
+    if (cards.length < 2) return track.clientWidth;
+    return cards[1].offsetLeft - cards[0].offsetLeft;
   }
 
   function updateArrows() {

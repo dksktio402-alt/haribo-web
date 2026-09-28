@@ -200,6 +200,13 @@ ul { list-style: none; margin: 0; padding: 0; }
   padding: 0 var(--gutter);
 }
 
+/* Everything between the hero and the footer (stats, flavors, history, events,
+   instagram) renders at 90%. `zoom` scales every length (px, vw, cqw, clamp),
+   but not percentage widths — so the container is pinned to 90% of the page to
+   make its content shrink with the rest instead of staying full width. */
+main { zoom: 0.9; }
+main .container { width: 90%; }
+
 .section-title {
   font-family: var(--font-heading);
   font-weight: 400;
